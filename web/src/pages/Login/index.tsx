@@ -44,6 +44,7 @@ const Formulario = styled.form`
 
 const BotaoCustomizado = styled(Botao)`
   width: 50%;
+  cursor: pointer;
 `;
 
 interface ILogin {
@@ -66,6 +67,7 @@ export default function Login() {
     try{
       cadastrarDados({ url: "auth/login", dados: usuario })
       autenticaStore.login({email: email, token: resposta})
+      console.log("teste", resposta)
       resposta && navigate("/dashboard");
     } catch(erro) {
       erro && alert('Não foi possível fazer o login')

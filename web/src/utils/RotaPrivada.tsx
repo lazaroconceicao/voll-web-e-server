@@ -4,7 +4,7 @@ import autenticaStore from "../stores/autentica.store"
 const RotaPrivada = () => {
     const {estaAutenticado} = autenticaStore;
 
-    return(
+    return (
         estaAutenticado ? <Outlet /> : <Navigate to="/login" />
     )
 }

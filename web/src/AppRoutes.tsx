@@ -5,7 +5,7 @@ import PaginaInicial from "./pages/PaginaInicial";
 import PaginaBaseFormulario from "./pages/PaginaBaseFormulario";
 import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
-import RotaPrivada from "./util/RotaPrivada";
+import RotaPrivada from "./utils/RotaPrivada";
 
 function AppRoutes() {
   return (
